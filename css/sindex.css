@@ -1,6 +1,75 @@
 img {
   position: absolute;
   max-height: 100%;
+  /*min-height: 65%;*/
   width: 100%;
+  border-bottom: 3px #D4D4EA solid;
 }
 /* SHOWCASE */
+.showcase {
+  position: absolute;
+}
+.showcase h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  position: relative;
+  display: inline;
+  color: #F1F3F6;
+  top: 15vh;
+  left: 19.5vw;
+}
+.showcase p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  position: relative;
+  display: inline;
+  color: #F1F3F6;
+  top: 42vh;
+  left: 7vw;
+}
+.showcase .mibtn {
+  position: relative;
+  top: 47vh;
+  left: 34vw;
+
+}
+
+/* TODO: rehacer las media queries porque
+         cambié la fuente.
+                                            */
+
+/* MEDIA QUERIES */
+@media (max-width: 1199.98px) {
+  .showcase h1 {
+    font-size: 3rem;
+  }
+  .showcase p {
+    display: block;
+    left: 10vw;
+  }
+}
+@media (max-width: 991.98px) {
+  .showcase h1 {
+    font-size: 2.5rem;
+    left: 20vw;
+  }
+  .showcase p {
+    display: block;
+    left: 2vw;
+  }
+}
+@media (max-width: 767.98px) {
+  .showcase h1 {
+    font-size: 2rem;
+    top: 15vh;
+  }
+  .showcase p {
+    display: none;
+  }
+}
+@media (max-width: 575.98px) {
+  .showcase h1 {
+    top: 10vh;
+  }
+}
